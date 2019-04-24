@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <windows.h>
-#include<conio.h>
+#include <conio.h>
 #include <stdio.h>
 #include <mmsystem.h>
 
@@ -11,7 +11,7 @@ void regrasInicio(){
 	cout << "" << endl;
 }
 
-int a;
+int numeroPlayers;
 
 int telaInicio(){
 	
@@ -27,7 +27,7 @@ int telaInicio(){
 	
 	system("cls");
 	system("color 02");
-	cout << "\n\n\n";
+	cout << "\n\n";
 	cout << "\toooooo   oooooo     oooo            .o.            ooooooooo.   " << endl;
 	cout << "\t `888.    `888.     .8'            .888.           `888   `Y88. " << endl;
 	cout << "\t  `888.   .8888.   .8'            .8\"888.           888   .d88' " << endl;
@@ -38,8 +38,8 @@ int telaInicio(){
 	
 	
 	cout <<"\n\n\tSelecione o numero de Players" << endl;	
-	cout <<"\n\n\t2 Players" << endl;
-	cout <<"\n\n\t3 Players" << endl;
+	cout <<"\n\t2 Players" << endl;
+	cout <<"\n\t3 Players" << endl;
 	fflush(stdin);
 	
 	cout << "\n\n";
@@ -51,11 +51,11 @@ int telaInicio(){
 		switch(aux2){
 			case 50:
 				cout << "\t2 Players selecionados        " << endl;
-				return a=2;
+				return numeroPlayers=2;
 				break;
 			case 51:
 				cout << "\t3 Players selecionados        " << endl;
-				return a=3;
+				return numeroPlayers=3;
 				break;		
 			default:
 				cout << str;
@@ -81,5 +81,4 @@ int main(void){
 	
 	return 0;
 }
-
 
